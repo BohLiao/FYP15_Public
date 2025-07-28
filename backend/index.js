@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import mysql from "mysql2";
 import dotenv from "dotenv";
-import multer from require('multer');
+import multer from "multer";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
