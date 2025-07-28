@@ -33,7 +33,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MySQL connection
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: process.env.DB_HOST,
   port: process.env.PORT,
   user: process.env.DB_USER,
