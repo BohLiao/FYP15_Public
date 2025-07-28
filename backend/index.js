@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import mysql from "mysql2";
 import dotenv from "dotenv";
-import multer from "multer";
+import multer from require('multer');
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
@@ -27,7 +27,7 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
